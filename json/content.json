@@ -188,7 +188,7 @@
     {
       "head": "Cactus",
       "p": "Kelly likes Zappos because there are lots of cactus nearby.",
-      "image": "./images/kelly_with_cactus.jpg"
+      "image": "./images/kelly_with_cactus_and_sunglasses.jpg"
     },
     "flyto":
     {
@@ -216,7 +216,7 @@
     {
       "head": "Cactus",
       "p": "Nicole also likes Zappos because she likes the sunshine in the Las Vegas.",
-      "image": "./images/nicole_with_grass.jpg"
+      "image": "./images/nicole_with_grass_and_sunglasses.jpg"
     },
     "flyto":
     {
