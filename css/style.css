@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  width: 64%;
+}
+
+#features {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 36%;
+  font-family: Tw Cen MT;
+  overflow-y: scroll;
+  background-color: "white";
+}
+
+section {
+  padding: 50px 50px;
+  line-height: 25px;
+  border-bottom: 1px solid #ddd;
+  opacity: 0.25;
+  font-size: 20px;
+}
+
+section.active {
+  opacity: 1;
+}
+
+section:first-child {
+  border-bottom: none;
+  margin-top: 200px;
+}
+
+section:last-child {
+  border-bottom: none;
+  margin-bottom: 500px;
+}
+
+.marker {
+  display: block;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  padding: 0;
+  background-size: 50px;
+  color: "white";
+  background-repeat: no-repeat;
+}

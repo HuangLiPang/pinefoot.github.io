@@ -1,0 +1,252 @@
+{
+  "welcome":
+  {
+    "content":
+    {
+      "head": "Welcome!",
+      "p": "Welcome to Li-Pang's Amazing Llama Story! The story starts from Taiwan, a peaceful island in the east Asia."
+    },
+    "flyto":
+    {
+      "bearing": 0,
+      "center": [121.136147, 23.781723],
+      "zoom": 5,
+      "speed": 0.8,
+      "pitch": 25
+    }
+  },
+  "introduction":
+  {
+    "content":
+    {
+      "head": "Llamas",
+      "p": "There are 3 llamas: Leo, Kelly, and Nicole. They are happy llamas."
+    },
+    "flyto":
+    {
+      "bearing": -28,
+      "center": [121.070679, 24.699166],
+      "zoom": 10.3,
+      "speed": 0.8,
+      "pitch": 57
+    },
+    "markers": [
+    {
+      "url": "./images/leo_llama.png",
+      "coordinate": [121.070679, 24.699166],
+      "msg": "I am Leo!"
+    },
+    {
+      "url": "./images/kelly_llama.png",
+      "coordinate": [121.170679, 24.699166],
+      "msg": "I am Kelly!"
+    },
+    {
+      "url": "./images/nicole_llama.png",
+      "coordinate": [121.070679, 24.799166],
+      "msg": "I am Nicole!"
+    }]
+  },
+  "Leo":
+  {
+    "content":
+    {
+      "head": "Leo",
+      "p": "Leo is a white fluffy llama.",
+      "image": "./images/leo.png"
+    },
+    "flyto":
+    {
+      "bearing": 37.6,
+      "center": [121.514658, 25.003006],
+      "zoom": 11.2,
+      "speed": 0.8,
+      "pitch": 45
+    },
+    "markers": [
+    {
+      "url": "./images/leo_llama.png",
+      "coordinate": [121.514658, 25.003006],
+      "msg": "I am white and fluffy!"
+    }]
+  },
+  "Kelly":
+  {
+    "content":
+    {
+      "head": "Kelly",
+      "p": "Kelly has beautiful eyes and now studies in Korea.",
+      "image": "./images/kelly.jpg"
+    },
+    "flyto":
+    {
+      "bearing": 94.5,
+      "center": [126.953410, 37.502686],
+      "zoom": 11,
+      "speed": 0.8,
+      "pitch": 42
+    },
+    "markers": [
+    {
+      "url": "./images/kelly_llama.png",
+      "coordinate": [126.953410, 37.502686],
+      "msg": "I am studying in Korea now!"
+    }]
+  },
+  "Nicole":
+  {
+    "content":
+    {
+      "head": "Nicole",
+      "p": "Nicole has gorgeous hair and she is from Kaohsiung, a city in south of Taiwan.",
+      "image": "./images/nicole.jpg"
+    },
+    "flyto":
+    {
+      "bearing": 104,
+      "center": [120.313516, 22.661355],
+      "zoom": 11.2,
+      "speed": 0.8,
+      "pitch": 60
+    },
+    "markers": [
+    {
+      "url": "./images/nicole_llama.png",
+      "coordinate": [120.313516, 22.661355],
+      "msg": "I am from Kaohsiung!"
+    }]
+  },
+  "Charlottesville":
+  {
+    "content":
+    {
+      "head": "University of Virginia",
+      "p": "Since Leo likes to play computers, he started to study Computer Science at the University of Virginia in Charlottesville.",
+      "image": "./images/uva.jpg"
+    },
+    "flyto":
+    {
+      "bearing": 40.69,
+      "center": [-78.509282, 38.049291],
+      "zoom": 11.7,
+      "speed": 0.8,
+      "pitch": 50.5
+    },
+    "markers": [
+    {
+      "url": "./images/leo_llama.png",
+      "coordinate": [-78.509282, 38.049291],
+      "msg": "I am a master student in CS at UVA!"
+    },
+    {
+      "url": "./images/uva.jpg",
+      "coordinate": [-78.510570, 38.031686]
+    }]
+  },
+  "Intern":
+  {
+    "content":
+    {
+      "head": "Internship",
+      "p": "Leo wants to improve his software skills so he wants to work as an intern during the summer."
+    },
+    "flyto":
+    {
+      "bearing": 0,
+      "center": [-98.23379542972964, 38.9182116907115],
+      "zoom": 3.5,
+      "speed": 0.8,
+      "pitch": 23
+    }
+  },
+  "Zappos":
+  {
+    "content":
+    {
+      "head": "Zappos",
+      "p": "He finds Zappos is hiring interns and he is very interested in working in the company.",
+      "image": "./images/zappos.jpg"
+    },
+    "flyto":
+    {
+      "bearing": 20,
+      "center": [-115.138997, 36.171408],
+      "zoom": 17.7,
+      "speed": 0.8,
+      "pitch": 60
+    },
+    "markers": [
+    {
+      "url": "./images/zappos.jpg",
+      "coordinate": [-115.138997, 36.171408],
+      "msg": "I am hiring interns!"
+    }]
+  },
+  "Cactus":
+  {
+    "content":
+    {
+      "head": "Cactus",
+      "p": "Kelly likes Zappos because there are lots of cactus nearby.",
+      "image": "./images/kelly_with_cactus.jpg"
+    },
+    "flyto":
+    {
+      "bearing": -21,
+      "center": [-115.071894, 36.073886],
+      "zoom": 18.8,
+      "speed": 0.8,
+      "pitch": 39.6
+    },
+    "markers": [
+    {
+      "url": "./images/kelly_llama.png",
+      "coordinate": [-115.071894, 36.073886],
+      "msg": "I like cactus!"
+    },
+    {
+      "url": "./images/cactus.png",
+      "coordinate": [-115.071982, 36.074107],
+      "msg": "I am cactus!"
+    }]
+  },
+  "CactusAgain":
+  {
+    "content":
+    {
+      "head": "Cactus",
+      "p": "Nicole also likes Zappos because she likes the sunshine in the Las Vegas.",
+      "image": "./images/nicole_with_grass.jpg"
+    },
+    "flyto":
+    {
+      "bearing": 100,
+      "center": [-115.462810, 36.193245],
+      "zoom": 12.2,
+      "speed": 0.8,
+      "pitch": 60
+    },
+    "markers": [
+    {
+      "url": "./images/nicole_llama.png",
+      "coordinate": [-115.462810, 36.193245],
+      "msg": "I like sunshine!"
+    }]
+  },
+  "Credits":
+  {
+    "content":
+    {
+      "h3": "Credits",
+      "p": "The website is built by <a href='https://huanglipang.tk/'>Li-Pang Huang</a> using <a href='https://docs.mapbox.com/mapbox-gl-js/api/'>Mapbox GL JS</a> library with pure JavaScript. For more information, please visit this <a href='https://huanglipang.tk/the-majestic-llama/'>repo</a>."
+    },
+    "flyto":
+    {
+      "bearing": 0,
+      "center": [0, 42.5],
+      "zoom": 1,
+      "speed": 0.8,
+      "pitch": 0
+    }
+  }
+}
