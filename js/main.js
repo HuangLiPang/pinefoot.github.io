@@ -62,7 +62,10 @@
     // bounds contains left, top, right, bottom, x, y, width, and height
     // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
     let bounds = element.getBoundingClientRect();
-    return bounds.top < window.innerHeight && bounds.bottom > window.innerHeight * 0.3;
+    // for wide screen
+    if(window.innerWidth >= 600) return bounds.top < window.innerHeight && bounds.bottom > window.innerHeight * 0.3;
+    // for mobile device
+    return bounds.top < window.innerHeight && bounds.bottom > window.innerHeight * 0.85;
   }
 
   // make sections from the json
