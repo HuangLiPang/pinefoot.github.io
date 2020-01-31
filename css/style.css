@@ -16,7 +16,7 @@ body {
   bottom: 0;
   right: 0;
   width: 36%;
-  font-family: Tw Cen MT;
+  font-family: sans-serif, Arial, Helvetica;
   overflow-y: scroll;
   background-color: "white";
 }
@@ -40,7 +40,7 @@ section:first-child {
 
 section:last-child {
   border-bottom: none;
-  margin-bottom: 500px;
+  margin-bottom: 400px;
 }
 
 .marker {

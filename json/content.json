@@ -3,7 +3,7 @@
   {
     "content":
     {
-      "head": "Welcome!",
+      "h3": "Welcome!",
       "p": "Welcome to Li-Pang's Amazing Llama Story! The story starts from Taiwan, a peaceful island in the east Asia."
     },
     "flyto":
@@ -19,7 +19,7 @@
   {
     "content":
     {
-      "head": "Llamas",
+      "h3": "Llamas",
       "p": "There are 3 llamas: Leo, Kelly, and Nicole. They are happy llamas."
     },
     "flyto":
@@ -51,7 +51,7 @@
   {
     "content":
     {
-      "head": "Leo",
+      "h3": "Leo",
       "p": "Leo is a white fluffy llama.",
       "image": "./images/leo.png"
     },
@@ -74,7 +74,7 @@
   {
     "content":
     {
-      "head": "Kelly",
+      "h3": "Kelly",
       "p": "Kelly has beautiful eyes and now studies in Korea.",
       "image": "./images/kelly.jpg"
     },
@@ -97,8 +97,8 @@
   {
     "content":
     {
-      "head": "Nicole",
-      "p": "Nicole has gorgeous hair and she is from Kaohsiung, a city in south of Taiwan.",
+      "h3": "Nicole",
+      "p": "Nicole has gorgeous hair and she is from Kaohsiung, a city in the south of Taiwan.",
       "image": "./images/nicole.jpg"
     },
     "flyto":
@@ -120,7 +120,7 @@
   {
     "content":
     {
-      "head": "University of Virginia",
+      "h3": "University of Virginia",
       "p": "Since Leo likes to play computers, he started to study Computer Science at the University of Virginia in Charlottesville.",
       "image": "./images/uva.jpg"
     },
@@ -140,14 +140,15 @@
     },
     {
       "url": "./images/uva.jpg",
-      "coordinate": [-78.510570, 38.031686]
+      "coordinate": [-78.510570, 38.031686],
+      "msg": "Go! Hoos!"
     }]
   },
   "Intern":
   {
     "content":
     {
-      "head": "Internship",
+      "h3": "Internship",
       "p": "Leo wants to improve his software skills so he wants to work as an intern during the summer."
     },
     "flyto":
@@ -163,8 +164,8 @@
   {
     "content":
     {
-      "head": "Zappos",
-      "p": "He finds Zappos is hiring interns and he is very interested in working in the company.",
+      "h3": "Zappos!",
+      "p": "He finds Zappos is hiring interns and he is very interested in working at Zappos.",
       "image": "./images/zappos.jpg"
     },
     "flyto":
@@ -186,7 +187,7 @@
   {
     "content":
     {
-      "head": "Cactus",
+      "h3": "Cactus",
       "p": "Kelly likes Zappos because there are lots of cactus nearby.",
       "image": "./images/kelly_with_cactus_and_sunglasses.jpg"
     },
@@ -214,8 +215,8 @@
   {
     "content":
     {
-      "head": "Cactus",
-      "p": "Nicole also likes Zappos because she likes the sunshine in the Las Vegas.",
+      "h3": "Sunshine",
+      "p": "Nicole also likes Zappos because she likes the sunshine in Las Vegas.",
       "image": "./images/nicole_with_grass_and_sunglasses.jpg"
     },
     "flyto":
@@ -238,7 +239,9 @@
     "content":
     {
       "h3": "Credits",
-      "p": "The website is built by <a href='https://huanglipang.tk/'>Li-Pang Huang</a> using <a href='https://docs.mapbox.com/mapbox-gl-js/api/'>Mapbox GL JS</a> library with pure JavaScript. For more information, please visit this <a href='https://github.com/HuangLiPang/the-majestic-llama'>repo</a>."
+      "p1": "The website is built by <a href='https://huanglipang.tk/'>Li-Pang Huang</a> using <a href='https://docs.mapbox.com/mapbox-gl-js/api/'>Mapbox GL JS</a> library with pure JavaScript. ",
+      "p2": "Images are drawn by Kelly and icons are from <a href='https://www.flaticon.com/'>Flaticon</a>. ",
+      "p3": "For more information, please visit this <a href='https://github.com/HuangLiPang/the-majestic-llama'>repo</a>."
     },
     "flyto":
     {
