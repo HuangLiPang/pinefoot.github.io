@@ -63,7 +63,7 @@
     // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
     let bounds = element.getBoundingClientRect();
     // for wide screen
-    if(window.innerWidth >= 600) return bounds.top < window.innerHeight && bounds.bottom > window.innerHeight * 0.3;
+    if(window.innerWidth >= 833) return bounds.top < window.innerHeight && bounds.bottom > window.innerHeight * 0.3;
     // for mobile device
     return bounds.top < window.innerHeight && bounds.bottom > window.innerHeight * 0.85;
   }

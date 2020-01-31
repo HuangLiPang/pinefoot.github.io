@@ -57,7 +57,12 @@ i {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+img {
+  display: block;
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: 833px) {
   #map {
     width: 100%;
     height: 50%
