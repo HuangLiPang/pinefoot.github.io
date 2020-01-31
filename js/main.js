@@ -1,27 +1,36 @@
 (function(window) {
   "use strict";
-  mapboxgl.accessToken = 'pk.eyJ1IjoibGVvaGF1bmciLCJhIjoiY2luOGJmOTl6MTk4dnVjbHlwbDEzOHEwdiJ9.9NeSGgoqqy1Ofi5p0r8D1w';
-  let map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
-    bearing: -0,
-    center: [121.136147, 23.781723],
-    zoom: 5,
-    speed: 0.8,
-    pitch: 0
-  });
-  // add a feature element to body
-  let features = document.createElement("features");
-  features.setAttribute("id", "features");
-  document.body.appendChild(features);
+  // make map global in this scope
+  let map = undefined;
+  let urls = ["./secret", "./json/content.json"];
+  Promise.all(urls.map(url => makeRequest('GET', url)))
+    .then(texts => {
+        let jsons = {
+          "secret": texts[0],
+          // parse chapters to json object
+          "chapters": JSON.parse(texts[1])
+        }
+        return jsons;
+      })
+    .then(jsons => {
+      mapboxgl.accessToken = jsons.secret;
+      map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        bearing: -0,
+        center: [121.136147, 23.781723],
+        zoom: 5,
+        speed: 0.8,
+        pitch: 0
+      });
+      // add a feature element to body
+      let features = document.createElement("features");
+      features.setAttribute("id", "features");
+      document.body.appendChild(features);
 
-  let activeChapterName;
-
-  makeRequest("GET", "./json/content.json")
-    .then(json => {
-      let features = document.getElementById("features");
-      let chapters = JSON.parse(json);
-      activeChapterName = Object.keys(chapters)[0];
+      let chapters = jsons.chapters;
+      // the first key is active
+      let activeChapterName = Object.keys(chapters)[0];
       // On every scroll event, check which element is on screen
       features.onscroll = function() {
         for(let chapterName in chapters) {
@@ -31,6 +40,7 @@
           }
         }
       };
+      // add sections to features and add markers on the map
       for(let chapterName in chapters) {
         features.appendChild(makeSection(chapterName, chapters[chapterName]["content"]));
         if("markers" in chapters[chapterName]) makeMarkers(chapters[chapterName]["markers"]);
@@ -49,11 +59,19 @@
 
   function isElementOnScreen(id) {
     let element = document.getElementById(id);
+    // bounds contains left, top, right, bottom, x, y, width, and height
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
     let bounds = element.getBoundingClientRect();
     return bounds.top < window.innerHeight && bounds.bottom > window.innerHeight * 0.3;
   }
 
+  // make sections from the json
   function makeSection(id, content) {
+    // id = "..."
+    // content = {
+    //   "h3": "Credits",
+    //   "p": "..."
+    // }
     let section = document.createElement("section");
     section.setAttribute("id", id)
     for(let element in content) {
@@ -70,7 +88,13 @@
     return section;
   }
 
+  // set custom markers on the map
   function makeMarkers(markers) {
+    // markers = [{
+    //   "url": "./images/nicole_llama.png",
+    //   "coordinate": [-115.462810, 36.193245],
+    //   "msg": "I like sunshine!"
+    // }]
     for(let marker of markers) {
       let el = document.createElement('div');
       el.className = 'marker';
@@ -93,9 +117,8 @@
     }
   }
 
-
   // make request function in promise
-  // for loading json and geojson
+  // for loading json
   function makeRequest(method, url) {
     return new Promise(function(resolve, reject) {
       let xhr = new XMLHttpRequest();
@@ -104,7 +127,7 @@
         if (this.status >= 200 && this.status < 300) {
           resolve(xhr.response);
         } else {
-          // If it fails, reject the promise with a error message
+          // If it fails, reject the promise with an error message
           reject({
             url: url,
             status: this.status,
