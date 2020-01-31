@@ -18,7 +18,6 @@ body {
   width: 36%;
   font-family: sans-serif, Arial, Helvetica;
   overflow-y: scroll;
-  background-color: "white";
 }
 
 section {
@@ -52,4 +51,8 @@ section:last-child {
   background-size: 50px;
   color: "white";
   background-repeat: no-repeat;
+}
+
+i {
+  font-size: 15px;
 }
