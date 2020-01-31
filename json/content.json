@@ -4,7 +4,7 @@
     "content":
     {
       "h3": "Welcome!",
-      "p": "Welcome to Li-Pang's Amazing Llama Story! The story starts from Taiwan, a peaceful island in the east Asia.",
+      "p": "Welcome to Li-Pang's Amazing Llama Story! The story starts from Taiwan, a peaceful island in east Asia.",
       "i": "(Please scroll down to read the story!)"
     },
     "flyto":
@@ -150,7 +150,7 @@
     "content":
     {
       "h3": "Internship",
-      "p": "Leo wants to improve his software skills so he wants to work as an intern during the summer."
+      "p": "Leo wants to bring out all his talent to the world so he starts to seek a summer internship."
     },
     "flyto":
     {
@@ -240,10 +240,7 @@
     "content":
     {
       "h3": "Credits",
-      "p1": "The website is built by <a href='https://huanglipang.tk/'>Li-Pang Huang</a> using <a href='https://docs.mapbox.com/mapbox-gl-js/api/'>Mapbox GL JS</a> library with pure JavaScript and CSS. ",
-      "p2": "It is designed responsively to any device. ",
-      "p3": "Llamas are drawn by Kelly and icons are from <a href='https://www.flaticon.com/'>Flaticon</a>. ",
-      "p4": "For more information, please visit this <a href='https://github.com/HuangLiPang/the-majestic-llama'>repo</a>."
+      "p": "The website is built by <a href='https://huanglipang.tk/'>Li-Pang Huang</a> using <a href='https://docs.mapbox.com/mapbox-gl-js/api/'>Mapbox GL JS</a> library with pure JavaScript and CSS. It is designed responsively to any device. Llamas are drawn by Kelly and icons are from <a href='https://www.flaticon.com/'>Flaticon</a>. For more information, please visit this <a href='https://github.com/HuangLiPang/the-majestic-llama'>repo</a>."
     },
     "flyto":
     {
